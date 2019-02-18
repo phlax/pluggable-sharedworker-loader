@@ -1,0 +1,58 @@
+{
+    "scripts": {
+        "build": "cross-env NODE_ENV=production babel src -d dist --ignore 'src/**/*.test.js' --copy-files",
+        "start": "npm run build -- -w"
+    },
+    "name": "@pluggable/sharedworker-loader",
+    "files": [
+        "src"
+    ],
+    "main": "src/cjs.js",
+    "bin": "",
+    "engines": {
+        "node": ">= 6.9.0 < 7.0.0 || >= 8.9.0"
+    },
+    "peerDependencies": {
+        "webpack": "^3.0.0 || ^4.0.0-alpha.0 || ^4.0.0"
+    },
+    "jest": {
+        "testEnvironment": "node"
+    },
+    "version": "0.0.11",
+    "author": "phlax",
+    "devDependencies": {
+        "del-cli": "^1.0.0",
+        "@webpack-contrib/defaults": "^2.4.0",
+        "babel-cli": "^6.0.0",
+        "eslint-config-webpack": "^1.0.0",
+        "conventional-github-releaser": "^3.1.0",
+        "eslint-plugin-import": "^2.2.0",
+        "eslint": "^4.0.0",
+        "babel-preset-env": "^1.0.0",
+        "@commitlint/cli": "^7.0.0",
+        "babel-polyfill": "^6.0.0",
+        "lint-staged": "^4.0.0",
+        "babel-plugin-transform-object-rest-spread": "^6.0.0",
+        "prettier": "^1.13.4",
+        "del": "^3.0.0",
+        "babel-jest": "^21.0.0",
+        "eslint-plugin-prettier": "^2.6.0",
+        "standard-version": "^4.0.0",
+        "webpack": "^4.29.4",
+        "nsp": "^2.6.0",
+        "jest": "^21.0.0",
+        "@webpack-contrib/eslint-config-webpack": "^2.0.4",
+        "@commitlint/config-conventional": "^7.0.1",
+        "pre-commit": "^1.0.0",
+        "husky": "^0.14.3",
+        "cross-env": "^5.0.0"
+    },
+    "description": "pluggable worker loader module for webpack",
+    "dependencies": {
+        "loader-utils": "^1.0.0",
+        "@webpack-contrib/schema-utils": "^1.0.0-beta.0"
+    },
+    "keywords": [
+        "webpack"
+    ]
+}

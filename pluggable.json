@@ -1,0 +1,6 @@
+{"js": {
+    "installs": {
+	"@pluggable/sharedworker-loader": "latest"
+    }
+}
+}
